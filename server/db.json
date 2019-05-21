@@ -1,0 +1,1481 @@
+{
+  "2019": [
+    {
+      "id": "january",
+      "days": [
+        {
+          "id": 1,
+          "checks": []
+        },
+        {
+          "id": 2,
+          "checks": []
+        },
+        {
+          "id": 3,
+          "checks": []
+        },
+        {
+          "id": 4,
+          "checks": []
+        },
+        {
+          "id": 5,
+          "checks": []
+        },
+        {
+          "id": 6,
+          "checks": []
+        },
+        {
+          "id": 7,
+          "checks": []
+        },
+        {
+          "id": 8,
+          "checks": []
+        },
+        {
+          "id": 9,
+          "checks": []
+        },
+        {
+          "id": 10,
+          "checks": []
+        },
+        {
+          "id": 12,
+          "checks": []
+        },
+        {
+          "id": 13,
+          "checks": []
+        },
+        {
+          "id": 14,
+          "checks": []
+        },
+        {
+          "id": 15,
+          "checks": []
+        },
+        {
+          "id": 16,
+          "checks": []
+        },
+        {
+          "id": 17,
+          "checks": []
+        },
+        {
+          "id": 18,
+          "checks": []
+        },
+        {
+          "id": 19,
+          "checks": []
+        },
+        {
+          "id": 20,
+          "checks": []
+        },
+        {
+          "id": 21,
+          "checks": []
+        },
+        {
+          "id": 22,
+          "checks": []
+        },
+        {
+          "id": 23,
+          "checks": []
+        },
+        {
+          "id": 24,
+          "checks": []
+        },
+        {
+          "id": 25,
+          "checks": []
+        },
+        {
+          "id": 26,
+          "checks": []
+        },
+        {
+          "id": 27,
+          "checks": []
+        },
+        {
+          "id": 28,
+          "checks": []
+        },
+        {
+          "id": 29,
+          "checks": []
+        },
+        {
+          "id": 30,
+          "checks": []
+        },
+        {
+          "id": 31,
+          "checks": []
+        }
+      ]
+    },
+    {
+      "id": "february",
+      "days": [
+        {
+          "id": 1,
+          "checks": []
+        },
+        {
+          "id": 2,
+          "checks": []
+        },
+        {
+          "id": 3,
+          "checks": []
+        },
+        {
+          "id": 4,
+          "checks": []
+        },
+        {
+          "id": 5,
+          "checks": []
+        },
+        {
+          "id": 6,
+          "checks": []
+        },
+        {
+          "id": 7,
+          "checks": []
+        },
+        {
+          "id": 8,
+          "checks": []
+        },
+        {
+          "id": 9,
+          "checks": []
+        },
+        {
+          "id": 10,
+          "checks": []
+        },
+        {
+          "id": 12,
+          "checks": []
+        },
+        {
+          "id": 13,
+          "checks": []
+        },
+        {
+          "id": 14,
+          "checks": []
+        },
+        {
+          "id": 15,
+          "checks": []
+        },
+        {
+          "id": 16,
+          "checks": []
+        },
+        {
+          "id": 17,
+          "checks": []
+        },
+        {
+          "id": 18,
+          "checks": []
+        },
+        {
+          "id": 19,
+          "checks": []
+        },
+        {
+          "id": 20,
+          "checks": []
+        },
+        {
+          "id": 21,
+          "checks": []
+        },
+        {
+          "id": 22,
+          "checks": []
+        },
+        {
+          "id": 23,
+          "checks": []
+        },
+        {
+          "id": 24,
+          "checks": []
+        },
+        {
+          "id": 25,
+          "checks": []
+        },
+        {
+          "id": 26,
+          "checks": []
+        },
+        {
+          "id": 27,
+          "checks": []
+        },
+        {
+          "id": 28,
+          "checks": []
+        }
+      ]
+    },
+    {
+      "id": "march",
+      "days": [
+        {
+          "id": 1,
+          "checks": []
+        },
+        {
+          "id": 2,
+          "checks": []
+        },
+        {
+          "id": 3,
+          "checks": []
+        },
+        {
+          "id": 4,
+          "checks": []
+        },
+        {
+          "id": 5,
+          "checks": []
+        },
+        {
+          "id": 6,
+          "checks": []
+        },
+        {
+          "id": 7,
+          "checks": []
+        },
+        {
+          "id": 8,
+          "checks": []
+        },
+        {
+          "id": 9,
+          "checks": []
+        },
+        {
+          "id": 10,
+          "checks": []
+        },
+        {
+          "id": 12,
+          "checks": []
+        },
+        {
+          "id": 13,
+          "checks": []
+        },
+        {
+          "id": 14,
+          "checks": []
+        },
+        {
+          "id": 15,
+          "checks": []
+        },
+        {
+          "id": 16,
+          "checks": []
+        },
+        {
+          "id": 17,
+          "checks": []
+        },
+        {
+          "id": 18,
+          "checks": []
+        },
+        {
+          "id": 19,
+          "checks": []
+        },
+        {
+          "id": 20,
+          "checks": []
+        },
+        {
+          "id": 21,
+          "checks": []
+        },
+        {
+          "id": 22,
+          "checks": []
+        },
+        {
+          "id": 23,
+          "checks": []
+        },
+        {
+          "id": 24,
+          "checks": []
+        },
+        {
+          "id": 25,
+          "checks": []
+        },
+        {
+          "id": 26,
+          "checks": []
+        },
+        {
+          "id": 27,
+          "checks": []
+        },
+        {
+          "id": 28,
+          "checks": []
+        },
+        {
+          "id": 29,
+          "checks": []
+        },
+        {
+          "id": 30,
+          "checks": []
+        },
+        {
+          "id": 31,
+          "checks": []
+        }
+      ]
+    },
+    {
+      "id": "april",
+      "days": [
+        {
+          "id": 1,
+          "checks": []
+        },
+        {
+          "id": 2,
+          "checks": []
+        },
+        {
+          "id": 3,
+          "checks": []
+        },
+        {
+          "id": 4,
+          "checks": []
+        },
+        {
+          "id": 5,
+          "checks": []
+        },
+        {
+          "id": 6,
+          "checks": []
+        },
+        {
+          "id": 7,
+          "checks": []
+        },
+        {
+          "id": 8,
+          "checks": []
+        },
+        {
+          "id": 9,
+          "checks": []
+        },
+        {
+          "id": 10,
+          "checks": []
+        },
+        {
+          "id": 12,
+          "checks": []
+        },
+        {
+          "id": 13,
+          "checks": []
+        },
+        {
+          "id": 14,
+          "checks": []
+        },
+        {
+          "id": 15,
+          "checks": []
+        },
+        {
+          "id": 16,
+          "checks": []
+        },
+        {
+          "id": 17,
+          "checks": []
+        },
+        {
+          "id": 18,
+          "checks": []
+        },
+        {
+          "id": 19,
+          "checks": []
+        },
+        {
+          "id": 20,
+          "checks": []
+        },
+        {
+          "id": 21,
+          "checks": []
+        },
+        {
+          "id": 22,
+          "checks": []
+        },
+        {
+          "id": 23,
+          "checks": []
+        },
+        {
+          "id": 24,
+          "checks": []
+        },
+        {
+          "id": 25,
+          "checks": []
+        },
+        {
+          "id": 26,
+          "checks": []
+        },
+        {
+          "id": 27,
+          "checks": []
+        },
+        {
+          "id": 28,
+          "checks": []
+        },
+        {
+          "id": 29,
+          "checks": []
+        },
+        {
+          "id": 30,
+          "checks": []
+        }
+      ]
+    },
+    {
+      "id": "may",
+      "days": [
+        {
+          "id": 1,
+          "checks": [
+            "08.00",
+            "12.00",
+            "14.00",
+            "17.00"
+          ]
+        },
+        {
+          "id": 2,
+          "checks": []
+        },
+        {
+          "id": 3,
+          "checks": []
+        },
+        {
+          "id": 4,
+          "checks": []
+        },
+        {
+          "id": 5,
+          "checks": []
+        },
+        {
+          "id": 6,
+          "checks": []
+        },
+        {
+          "id": 7,
+          "checks": []
+        },
+        {
+          "id": 8,
+          "checks": []
+        },
+        {
+          "id": 9,
+          "checks": []
+        },
+        {
+          "id": 10,
+          "checks": []
+        },
+        {
+          "id": 12,
+          "checks": []
+        },
+        {
+          "id": 13,
+          "checks": []
+        },
+        {
+          "id": 14,
+          "checks": []
+        },
+        {
+          "id": 15,
+          "checks": []
+        },
+        {
+          "id": 16,
+          "checks": []
+        },
+        {
+          "id": 17,
+          "checks": []
+        },
+        {
+          "id": 18,
+          "checks": []
+        },
+        {
+          "id": 19,
+          "checks": []
+        },
+        {
+          "id": 20,
+          "checks": []
+        },
+        {
+          "id": 21,
+          "checks": []
+        },
+        {
+          "id": 22,
+          "checks": []
+        },
+        {
+          "id": 23,
+          "checks": []
+        },
+        {
+          "id": 24,
+          "checks": []
+        },
+        {
+          "id": 25,
+          "checks": []
+        },
+        {
+          "id": 26,
+          "checks": []
+        },
+        {
+          "id": 27,
+          "checks": []
+        },
+        {
+          "id": 28,
+          "checks": []
+        },
+        {
+          "id": 29,
+          "checks": []
+        },
+        {
+          "id": 30,
+          "checks": []
+        },
+        {
+          "id": 31,
+          "checks": []
+        }
+      ]
+    },
+    {
+      "id": "june",
+      "days": [
+        {
+          "id": 1,
+          "checks": []
+        },
+        {
+          "id": 2,
+          "checks": []
+        },
+        {
+          "id": 3,
+          "checks": []
+        },
+        {
+          "id": 4,
+          "checks": []
+        },
+        {
+          "id": 5,
+          "checks": []
+        },
+        {
+          "id": 6,
+          "checks": []
+        },
+        {
+          "id": 7,
+          "checks": []
+        },
+        {
+          "id": 8,
+          "checks": []
+        },
+        {
+          "id": 9,
+          "checks": []
+        },
+        {
+          "id": 10,
+          "checks": []
+        },
+        {
+          "id": 12,
+          "checks": []
+        },
+        {
+          "id": 13,
+          "checks": []
+        },
+        {
+          "id": 14,
+          "checks": []
+        },
+        {
+          "id": 15,
+          "checks": []
+        },
+        {
+          "id": 16,
+          "checks": []
+        },
+        {
+          "id": 17,
+          "checks": []
+        },
+        {
+          "id": 18,
+          "checks": []
+        },
+        {
+          "id": 19,
+          "checks": []
+        },
+        {
+          "id": 20,
+          "checks": []
+        },
+        {
+          "id": 21,
+          "checks": []
+        },
+        {
+          "id": 22,
+          "checks": []
+        },
+        {
+          "id": 23,
+          "checks": []
+        },
+        {
+          "id": 24,
+          "checks": []
+        },
+        {
+          "id": 25,
+          "checks": []
+        },
+        {
+          "id": 26,
+          "checks": []
+        },
+        {
+          "id": 27,
+          "checks": []
+        },
+        {
+          "id": 28,
+          "checks": []
+        },
+        {
+          "id": 29,
+          "checks": []
+        },
+        {
+          "id": 30,
+          "checks": []
+        }
+      ]
+    },
+    {
+      "id": "july",
+      "days": [
+        {
+          "id": 1,
+          "checks": []
+        },
+        {
+          "id": 2,
+          "checks": []
+        },
+        {
+          "id": 3,
+          "checks": []
+        },
+        {
+          "id": 4,
+          "checks": []
+        },
+        {
+          "id": 5,
+          "checks": []
+        },
+        {
+          "id": 6,
+          "checks": []
+        },
+        {
+          "id": 7,
+          "checks": []
+        },
+        {
+          "id": 8,
+          "checks": []
+        },
+        {
+          "id": 9,
+          "checks": []
+        },
+        {
+          "id": 10,
+          "checks": []
+        },
+        {
+          "id": 12,
+          "checks": []
+        },
+        {
+          "id": 13,
+          "checks": []
+        },
+        {
+          "id": 14,
+          "checks": []
+        },
+        {
+          "id": 15,
+          "checks": []
+        },
+        {
+          "id": 16,
+          "checks": []
+        },
+        {
+          "id": 17,
+          "checks": []
+        },
+        {
+          "id": 18,
+          "checks": []
+        },
+        {
+          "id": 19,
+          "checks": []
+        },
+        {
+          "id": 20,
+          "checks": []
+        },
+        {
+          "id": 21,
+          "checks": []
+        },
+        {
+          "id": 22,
+          "checks": []
+        },
+        {
+          "id": 23,
+          "checks": []
+        },
+        {
+          "id": 24,
+          "checks": []
+        },
+        {
+          "id": 25,
+          "checks": []
+        },
+        {
+          "id": 26,
+          "checks": []
+        },
+        {
+          "id": 27,
+          "checks": []
+        },
+        {
+          "id": 28,
+          "checks": []
+        },
+        {
+          "id": 29,
+          "checks": []
+        },
+        {
+          "id": 30,
+          "checks": []
+        },
+        {
+          "id": 31,
+          "checks": []
+        }
+      ]
+    },
+    {
+      "id": "august",
+      "days": [
+        {
+          "id": 1,
+          "checks": []
+        },
+        {
+          "id": 2,
+          "checks": []
+        },
+        {
+          "id": 3,
+          "checks": []
+        },
+        {
+          "id": 4,
+          "checks": []
+        },
+        {
+          "id": 5,
+          "checks": []
+        },
+        {
+          "id": 6,
+          "checks": []
+        },
+        {
+          "id": 7,
+          "checks": []
+        },
+        {
+          "id": 8,
+          "checks": []
+        },
+        {
+          "id": 9,
+          "checks": []
+        },
+        {
+          "id": 10,
+          "checks": []
+        },
+        {
+          "id": 12,
+          "checks": []
+        },
+        {
+          "id": 13,
+          "checks": []
+        },
+        {
+          "id": 14,
+          "checks": []
+        },
+        {
+          "id": 15,
+          "checks": []
+        },
+        {
+          "id": 16,
+          "checks": []
+        },
+        {
+          "id": 17,
+          "checks": []
+        },
+        {
+          "id": 18,
+          "checks": []
+        },
+        {
+          "id": 19,
+          "checks": []
+        },
+        {
+          "id": 20,
+          "checks": []
+        },
+        {
+          "id": 21,
+          "checks": []
+        },
+        {
+          "id": 22,
+          "checks": []
+        },
+        {
+          "id": 23,
+          "checks": []
+        },
+        {
+          "id": 24,
+          "checks": []
+        },
+        {
+          "id": 25,
+          "checks": []
+        },
+        {
+          "id": 26,
+          "checks": []
+        },
+        {
+          "id": 27,
+          "checks": []
+        },
+        {
+          "id": 28,
+          "checks": []
+        },
+        {
+          "id": 29,
+          "checks": []
+        },
+        {
+          "id": 30,
+          "checks": []
+        },
+        {
+          "id": 31,
+          "checks": []
+        }
+      ]
+    },
+    {
+      "id": "september",
+      "days": [
+        {
+          "id": 1,
+          "checks": []
+        },
+        {
+          "id": 2,
+          "checks": []
+        },
+        {
+          "id": 3,
+          "checks": []
+        },
+        {
+          "id": 4,
+          "checks": []
+        },
+        {
+          "id": 5,
+          "checks": []
+        },
+        {
+          "id": 6,
+          "checks": []
+        },
+        {
+          "id": 7,
+          "checks": []
+        },
+        {
+          "id": 8,
+          "checks": []
+        },
+        {
+          "id": 9,
+          "checks": []
+        },
+        {
+          "id": 10,
+          "checks": []
+        },
+        {
+          "id": 12,
+          "checks": []
+        },
+        {
+          "id": 13,
+          "checks": []
+        },
+        {
+          "id": 14,
+          "checks": []
+        },
+        {
+          "id": 15,
+          "checks": []
+        },
+        {
+          "id": 16,
+          "checks": []
+        },
+        {
+          "id": 17,
+          "checks": []
+        },
+        {
+          "id": 18,
+          "checks": []
+        },
+        {
+          "id": 19,
+          "checks": []
+        },
+        {
+          "id": 20,
+          "checks": []
+        },
+        {
+          "id": 21,
+          "checks": []
+        },
+        {
+          "id": 22,
+          "checks": []
+        },
+        {
+          "id": 23,
+          "checks": []
+        },
+        {
+          "id": 24,
+          "checks": []
+        },
+        {
+          "id": 25,
+          "checks": []
+        },
+        {
+          "id": 26,
+          "checks": []
+        },
+        {
+          "id": 27,
+          "checks": []
+        },
+        {
+          "id": 28,
+          "checks": []
+        },
+        {
+          "id": 29,
+          "checks": []
+        },
+        {
+          "id": 30,
+          "checks": []
+        }
+      ]
+    },
+    {
+      "id": "october",
+      "days": [
+        {
+          "id": 1,
+          "checks": []
+        },
+        {
+          "id": 2,
+          "checks": []
+        },
+        {
+          "id": 3,
+          "checks": []
+        },
+        {
+          "id": 4,
+          "checks": []
+        },
+        {
+          "id": 5,
+          "checks": []
+        },
+        {
+          "id": 6,
+          "checks": []
+        },
+        {
+          "id": 7,
+          "checks": []
+        },
+        {
+          "id": 8,
+          "checks": []
+        },
+        {
+          "id": 9,
+          "checks": []
+        },
+        {
+          "id": 10,
+          "checks": []
+        },
+        {
+          "id": 12,
+          "checks": []
+        },
+        {
+          "id": 13,
+          "checks": []
+        },
+        {
+          "id": 14,
+          "checks": []
+        },
+        {
+          "id": 15,
+          "checks": []
+        },
+        {
+          "id": 16,
+          "checks": []
+        },
+        {
+          "id": 17,
+          "checks": []
+        },
+        {
+          "id": 18,
+          "checks": []
+        },
+        {
+          "id": 19,
+          "checks": []
+        },
+        {
+          "id": 20,
+          "checks": []
+        },
+        {
+          "id": 21,
+          "checks": []
+        },
+        {
+          "id": 22,
+          "checks": []
+        },
+        {
+          "id": 23,
+          "checks": []
+        },
+        {
+          "id": 24,
+          "checks": []
+        },
+        {
+          "id": 25,
+          "checks": []
+        },
+        {
+          "id": 26,
+          "checks": []
+        },
+        {
+          "id": 27,
+          "checks": []
+        },
+        {
+          "id": 28,
+          "checks": []
+        },
+        {
+          "id": 29,
+          "checks": []
+        },
+        {
+          "id": 30,
+          "checks": []
+        },
+        {
+          "id": 31,
+          "checks": []
+        }
+      ]
+    },
+    {
+      "id": "november",
+      "days": [
+        {
+          "id": 1,
+          "checks": []
+        },
+        {
+          "id": 2,
+          "checks": []
+        },
+        {
+          "id": 3,
+          "checks": []
+        },
+        {
+          "id": 4,
+          "checks": []
+        },
+        {
+          "id": 5,
+          "checks": []
+        },
+        {
+          "id": 6,
+          "checks": []
+        },
+        {
+          "id": 7,
+          "checks": []
+        },
+        {
+          "id": 8,
+          "checks": []
+        },
+        {
+          "id": 9,
+          "checks": []
+        },
+        {
+          "id": 10,
+          "checks": []
+        },
+        {
+          "id": 12,
+          "checks": []
+        },
+        {
+          "id": 13,
+          "checks": []
+        },
+        {
+          "id": 14,
+          "checks": []
+        },
+        {
+          "id": 15,
+          "checks": []
+        },
+        {
+          "id": 16,
+          "checks": []
+        },
+        {
+          "id": 17,
+          "checks": []
+        },
+        {
+          "id": 18,
+          "checks": []
+        },
+        {
+          "id": 19,
+          "checks": []
+        },
+        {
+          "id": 20,
+          "checks": []
+        },
+        {
+          "id": 21,
+          "checks": []
+        },
+        {
+          "id": 22,
+          "checks": []
+        },
+        {
+          "id": 23,
+          "checks": []
+        },
+        {
+          "id": 24,
+          "checks": []
+        },
+        {
+          "id": 25,
+          "checks": []
+        },
+        {
+          "id": 26,
+          "checks": []
+        },
+        {
+          "id": 27,
+          "checks": []
+        },
+        {
+          "id": 28,
+          "checks": []
+        },
+        {
+          "id": 29,
+          "checks": []
+        },
+        {
+          "id": 30,
+          "checks": []
+        }
+      ]
+    },
+    {
+      "id": "december",
+      "days": [
+        {
+          "id": 1,
+          "checks": []
+        },
+        {
+          "id": 2,
+          "checks": []
+        },
+        {
+          "id": 3,
+          "checks": []
+        },
+        {
+          "id": 4,
+          "checks": []
+        },
+        {
+          "id": 5,
+          "checks": []
+        },
+        {
+          "id": 6,
+          "checks": []
+        },
+        {
+          "id": 7,
+          "checks": []
+        },
+        {
+          "id": 8,
+          "checks": []
+        },
+        {
+          "id": 9,
+          "checks": []
+        },
+        {
+          "id": 10,
+          "checks": []
+        },
+        {
+          "id": 12,
+          "checks": []
+        },
+        {
+          "id": 13,
+          "checks": []
+        },
+        {
+          "id": 14,
+          "checks": []
+        },
+        {
+          "id": 15,
+          "checks": []
+        },
+        {
+          "id": 16,
+          "checks": []
+        },
+        {
+          "id": 17,
+          "checks": []
+        },
+        {
+          "id": 18,
+          "checks": []
+        },
+        {
+          "id": 19,
+          "checks": []
+        },
+        {
+          "id": 20,
+          "checks": []
+        },
+        {
+          "id": 21,
+          "checks": []
+        },
+        {
+          "id": 22,
+          "checks": []
+        },
+        {
+          "id": 23,
+          "checks": []
+        },
+        {
+          "id": 24,
+          "checks": []
+        },
+        {
+          "id": 25,
+          "checks": []
+        },
+        {
+          "id": 26,
+          "checks": []
+        },
+        {
+          "id": 27,
+          "checks": []
+        },
+        {
+          "id": 28,
+          "checks": []
+        },
+        {
+          "id": 29,
+          "checks": []
+        },
+        {
+          "id": 30,
+          "checks": []
+        },
+        {
+          "id": 31,
+          "checks": []
+        }
+      ]
+    }
+  ]
+}
