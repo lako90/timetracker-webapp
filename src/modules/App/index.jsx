@@ -27,6 +27,7 @@ const StyledNavItem = styled(NavItem)`
 const today = new Date();
 const currentYear = today.getFullYear();
 const currentMonth = today.getMonth();
+const months = getMonths(currentYear);
 
 class App extends Component {
   constructor() {
@@ -36,7 +37,7 @@ class App extends Component {
   }
 
   setActiveMonth = (activeMonth) => {
-    this.setState({ activeMonth }, () => { console.log('activeMonth', activeMonth); });
+    this.setState({ activeMonth });
   }
 
   renderMonthNavItem = ({ name }, index) => {
@@ -57,6 +58,7 @@ class App extends Component {
   renderMonth = ({ name, days }, index) => (
     <Month
       key={index}
+      year={currentYear}
       index={index}
       name={name}
       days={days}
@@ -65,7 +67,6 @@ class App extends Component {
 
   render() {
     const { activeMonth } = this.state;
-    const months = getMonths(currentYear);
 
     return (
       <StyledContainer>
