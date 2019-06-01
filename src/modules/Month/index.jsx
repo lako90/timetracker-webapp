@@ -63,6 +63,7 @@ class Month extends Component {
 }
 
 Month.propTypes = {
+  index: PropTypes.number.isRequired,
   year: PropTypes.number.isRequired,
   name: PropTypes.string.isRequired,
   days: PropTypes.arrayOf(PropTypes.shape({
