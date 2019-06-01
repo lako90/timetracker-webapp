@@ -17,7 +17,7 @@ class Month extends Component {
     getMonth(name);
   }
 
-  renderDay = ({ id, checks }) => {
+  renderDay = ({ id, checks, workDurationH }) => {
     const { name: monthName, year, index } = this.props;
 
     return (
@@ -27,6 +27,7 @@ class Month extends Component {
         checks={checks}
         indexMonth={index}
         year={year}
+        workDurationH={workDurationH}
       />
     );
   }
@@ -46,10 +47,8 @@ class Month extends Component {
           <thead>
             <tr>
               <td />
-              <td>{'Check-In'}</td>
-              <td>{'Check-Out'}</td>
-              <td>{'Check-In'}</td>
-              <td>{'Check-Out'}</td>
+              <td>{'Entrances'}</td>
+              <td>{'Exits'}</td>
               <td />
             </tr>
           </thead>
@@ -68,7 +67,8 @@ Month.propTypes = {
   name: PropTypes.string.isRequired,
   days: PropTypes.arrayOf(PropTypes.shape({
     id: PropTypes.number,
-    days: PropTypes.arrayOf(PropTypes.string),
+    checks: PropTypes.arrayOf(PropTypes.object),
+    workDurationH: PropTypes.number,
   })),
   getMonth: PropTypes.func.isRequired,
 };

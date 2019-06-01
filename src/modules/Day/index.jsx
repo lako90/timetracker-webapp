@@ -2,40 +2,51 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import moment from 'moment';
 
+import { calculateTimeDiff } from '../../libraries/utils';
+
 const timeDisplayFormat = 'H:mm';
-const dateParseFormat = `YYYY-MM-DD ${timeDisplayFormat}`;
 
 class Day extends Component {
-  prepareToMoment = (time) => {
+  getDate = () => {
     const {
       id: day,
       indexMonth: month,
       year,
     } = this.props;
 
-    return `${year}-${month}-${day} ${time}`;
+    return `${year}-${month}-${day}`;
   }
 
+  renderCheck = check => (
+    <div key={check}>
+      {moment(check, timeDisplayFormat).format(timeDisplayFormat)}
+    </div>
+  )
+
   render() {
-    const { id, checks } = this.props;
+    const {
+      id,
+      checks: { entrances, exits },
+    } = this.props;
 
-    const checkInAm = moment(this.prepareToMoment(checks[0]), dateParseFormat);
-    const checkOutAm = moment(this.prepareToMoment(checks[1]), dateParseFormat);
-    const checkInPm = moment(this.prepareToMoment(checks[2]), dateParseFormat);
-    const checkOutPm = moment(this.prepareToMoment(checks[3]), dateParseFormat);
+    if (entrances && exits) {
+      const minutesWorked = calculateTimeDiff(
+        entrances,
+        exits,
+        this.getDate(),
+      );
 
-    const minutesWorked = checkOutAm.diff(checkInAm, 'minutes') + checkOutPm.diff(checkInPm, 'minutes');
+      return (
+        <tr>
+          <td>{id}</td>
+          <td>{entrances.map(this.renderCheck)}</td>
+          <td>{exits.map(this.renderCheck)}</td>
+          <td>{`${minutesWorked}`}</td>
+        </tr>
+      );
+    }
 
-    return (
-      <tr>
-        <td>{id}</td>
-        <td>{checkInAm.format(timeDisplayFormat)}</td>
-        <td>{checkOutAm.format(timeDisplayFormat)}</td>
-        <td>{checkInPm.format(timeDisplayFormat)}</td>
-        <td>{checkOutPm.format(timeDisplayFormat)}</td>
-        <td>{`${minutesWorked}`}</td>
-      </tr>
-    );
+    return null;
   }
 }
 
@@ -43,7 +54,10 @@ Day.propTypes = {
   id: PropTypes.number.isRequired,
   indexMonth: PropTypes.number.isRequired,
   year: PropTypes.number.isRequired,
-  checks: PropTypes.arrayOf(PropTypes.string).isRequired,
+  checks: PropTypes.shape({
+    entrances: PropTypes.arrayOf(PropTypes.string),
+    exits: PropTypes.arrayOf(PropTypes.string),
+  }).isRequired,
 };
 
 export default Day;
