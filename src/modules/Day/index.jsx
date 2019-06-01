@@ -2,9 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import moment from 'moment';
 
-import { calculateTimeDiff } from '../../libraries/utils';
-
-const timeDisplayFormat = 'H:mm';
+import { calculateTimeDiff, timeDisplayFormat } from '../../libraries/utils';
 
 class Day extends Component {
   getDate = () => {
@@ -27,21 +25,25 @@ class Day extends Component {
     const {
       id,
       checks: { entrances, exits },
+      workDurationHour,
     } = this.props;
 
     if (entrances && exits) {
-      const minutesWorked = calculateTimeDiff(
+      const totalDifferance = calculateTimeDiff(
         entrances,
         exits,
         this.getDate(),
       );
+      const minutesWorked = moment.duration(totalDifferance, 'minutes');
+      const durationHours = minutesWorked.get('hours');
+      const durationMinutes = minutesWorked.get('minutes');
 
       return (
         <tr>
           <td>{id}</td>
           <td>{entrances.map(this.renderCheck)}</td>
           <td>{exits.map(this.renderCheck)}</td>
-          <td>{`${minutesWorked}`}</td>
+          <td>{`${durationHours}:${durationMinutes} / ${workDurationHour}:00 -> ${totalDifferance - (workDurationHour * 60)}`}</td>
         </tr>
       );
     }
@@ -58,6 +60,11 @@ Day.propTypes = {
     entrances: PropTypes.arrayOf(PropTypes.string),
     exits: PropTypes.arrayOf(PropTypes.string),
   }).isRequired,
+  workDurationHour: PropTypes.number,
+};
+
+Day.defaultProps = {
+  workDurationHour: 8,
 };
 
 export default Day;
