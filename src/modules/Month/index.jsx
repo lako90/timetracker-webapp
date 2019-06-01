@@ -1,9 +1,8 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
-import TabPane from 'reactstrap/lib/TabPane';
 import Table from 'reactstrap/lib/Table';
 
 import Day from '../Day';
@@ -35,13 +34,12 @@ class Month extends Component {
   render() {
     const {
       year,
-      index,
       name,
       days,
     } = this.props;
 
     return (
-      <TabPane tabId={index}>
+      <Fragment>
         <h4>{`${name} ${year}`}</h4>
 
         <Table>
@@ -59,13 +57,12 @@ class Month extends Component {
             {days.map(this.renderDay)}
           </tbody>
         </Table>
-      </TabPane>
+      </Fragment>
     );
   }
 }
 
 Month.propTypes = {
-  index: PropTypes.number.isRequired,
   year: PropTypes.number.isRequired,
   name: PropTypes.string.isRequired,
   days: PropTypes.arrayOf(PropTypes.shape({
