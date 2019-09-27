@@ -1,7 +1,9 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
+
+import Table from 'reactstrap/lib/Table';
 
 import Day from '../Day';
 
@@ -15,7 +17,7 @@ class Month extends Component {
     getMonth(name);
   }
 
-  renderDay = ({ id, checks }) => {
+  renderDay = ({ id, checks, workDurationHour }) => {
     const { name: monthName, year, index } = this.props;
 
     return (
@@ -25,14 +27,37 @@ class Month extends Component {
         checks={checks}
         indexMonth={index}
         year={year}
+        workDurationHour={workDurationHour}
       />
     );
   }
 
   render() {
-    const { days } = this.props;
+    const {
+      year,
+      name,
+      days,
+    } = this.props;
 
-    return days.map(this.renderDay);
+    return (
+      <Fragment>
+        <h4>{`${name} ${year}`}</h4>
+
+        <Table>
+          <thead>
+            <tr>
+              <td />
+              <td>{'Entrances'}</td>
+              <td>{'Exits'}</td>
+              <td />
+            </tr>
+          </thead>
+          <tbody>
+            {days.map(this.renderDay)}
+          </tbody>
+        </Table>
+      </Fragment>
+    );
   }
 }
 
@@ -42,7 +67,8 @@ Month.propTypes = {
   name: PropTypes.string.isRequired,
   days: PropTypes.arrayOf(PropTypes.shape({
     id: PropTypes.number,
-    days: PropTypes.arrayOf(PropTypes.string),
+    checks: PropTypes.arrayOf(PropTypes.object),
+    workDurationHour: PropTypes.number,
   })),
   getMonth: PropTypes.func.isRequired,
 };

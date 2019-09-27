@@ -2,42 +2,53 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import moment from 'moment';
 
-const timeDisplayFormat = 'H:mm';
-const dateParseFormat = `YYYY-MM-DD ${timeDisplayFormat}`;
+import { calculateTimeDiff, timeDisplayFormat } from '../../libraries/utils';
 
 class Day extends Component {
-  prepareToMoment = (time) => {
+  getDate = () => {
     const {
       id: day,
       indexMonth: month,
       year,
     } = this.props;
 
-    return `${year}-${month}-${day} ${time}`;
+    return `${year}-${month}-${day}`;
   }
 
-  getMoment = time => moment(this.prepareToMoment(time), dateParseFormat);
+  renderCheck = check => (
+    <div key={check}>
+      {moment(check, timeDisplayFormat).format(timeDisplayFormat)}
+    </div>
+  )
 
   render() {
-    const { id, checks } = this.props;
+    const {
+      id,
+      checks: { entrances, exits },
+      workDurationHour,
+    } = this.props;
 
-    const checkInAm = this.getMoment(checks[0]);
-    const checkOutAm = this.getMoment(checks[1]);
-    const checkInPm = this.getMoment(checks[2]);
-    const checkOutPm = this.getMoment(checks[3]);
+    if (entrances && exits) {
+      const totalDifferance = calculateTimeDiff(
+        entrances,
+        exits,
+        this.getDate(),
+      );
+      const minutesWorked = moment.duration(totalDifferance, 'minutes');
+      const durationHours = minutesWorked.get('hours');
+      const durationMinutes = minutesWorked.get('minutes');
 
-    const minutesWorked = checkOutAm.diff(checkInAm, 'minutes') + checkOutPm.diff(checkInPm, 'minutes');
+      return (
+        <tr>
+          <td>{id}</td>
+          <td>{entrances.map(this.renderCheck)}</td>
+          <td>{exits.map(this.renderCheck)}</td>
+          <td>{`${durationHours}:${durationMinutes} / ${workDurationHour}:00 -> ${totalDifferance - (workDurationHour * 60)}`}</td>
+        </tr>
+      );
+    }
 
-    return (
-      <tr>
-        <td>{id}</td>
-        <td>{checkInAm.format(timeDisplayFormat)}</td>
-        <td>{checkOutAm.format(timeDisplayFormat)}</td>
-        <td>{checkInPm.format(timeDisplayFormat)}</td>
-        <td>{checkOutPm.format(timeDisplayFormat)}</td>
-        <td>{`${minutesWorked}`}</td>
-      </tr>
-    );
+    return null;
   }
 }
 
@@ -45,7 +56,15 @@ Day.propTypes = {
   id: PropTypes.number.isRequired,
   indexMonth: PropTypes.number.isRequired,
   year: PropTypes.number.isRequired,
-  checks: PropTypes.arrayOf(PropTypes.string).isRequired,
+  checks: PropTypes.shape({
+    entrances: PropTypes.arrayOf(PropTypes.string),
+    exits: PropTypes.arrayOf(PropTypes.string),
+  }).isRequired,
+  workDurationHour: PropTypes.number,
+};
+
+Day.defaultProps = {
+  workDurationHour: 8,
 };
 
 export default Day;
