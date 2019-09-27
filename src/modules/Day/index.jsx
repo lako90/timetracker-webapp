@@ -16,13 +16,15 @@ class Day extends Component {
     return `${year}-${month}-${day} ${time}`;
   }
 
+  getMoment = time => moment(this.prepareToMoment(time), dateParseFormat);
+
   render() {
     const { id, checks } = this.props;
 
-    const checkInAm = moment(this.prepareToMoment(checks[0]), dateParseFormat);
-    const checkOutAm = moment(this.prepareToMoment(checks[1]), dateParseFormat);
-    const checkInPm = moment(this.prepareToMoment(checks[2]), dateParseFormat);
-    const checkOutPm = moment(this.prepareToMoment(checks[3]), dateParseFormat);
+    const checkInAm = this.getMoment(checks[0]);
+    const checkOutAm = this.getMoment(checks[1]);
+    const checkInPm = this.getMoment(checks[2]);
+    const checkOutPm = this.getMoment(checks[3]);
 
     const minutesWorked = checkOutAm.diff(checkInAm, 'minutes') + checkOutPm.diff(checkInPm, 'minutes');
 

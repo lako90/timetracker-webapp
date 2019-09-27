@@ -7,6 +7,8 @@ import Nav from 'reactstrap/lib/Nav';
 import NavItem from 'reactstrap/lib/NavItem';
 import NavLink from 'reactstrap/lib/NavLink';
 import TabContent from 'reactstrap/lib/TabContent';
+import TabPane from 'reactstrap/lib/TabPane';
+import Table from 'reactstrap/lib/Table';
 
 import Month from '../Month';
 
@@ -56,13 +58,33 @@ class App extends Component {
   }
 
   renderMonth = ({ name, days }, index) => (
-    <Month
+    <TabPane
       key={index}
-      year={currentYear}
-      index={index}
-      name={name}
-      days={days}
-    />
+      tabId={index}
+    >
+      <h4>{`${name} ${currentYear}`}</h4>
+
+      <Table>
+        <thead>
+          <tr>
+            <td />
+            <td>{'Check-In'}</td>
+            <td>{'Check-Out'}</td>
+            <td>{'Check-In'}</td>
+            <td>{'Check-Out'}</td>
+            <td />
+          </tr>
+        </thead>
+        <tbody>
+          <Month
+            year={currentYear}
+            index={index}
+            name={name}
+            days={days}
+          />
+        </tbody>
+      </Table>
+    </TabPane>
   )
 
   render() {
