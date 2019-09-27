@@ -1,65 +1,66 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import moment from 'moment';
+import { Input } from 'reactstrap';
 
-import { calculateTimeDiff, timeDisplayFormat } from '../../libraries/utils';
+import { timeDisplayFormat } from '../../libraries/utils';
 
 class Day extends Component {
-  getDate = () => {
-    const {
-      id: day,
-      indexMonth: month,
-      year,
-    } = this.props;
+  constructor(props) {
+    super(props);
 
-    return `${year}-${month}-${day}`;
+    this.state = {};
   }
 
-  renderCheck = check => (
-    <div key={check}>
-      {moment(check, timeDisplayFormat).format(timeDisplayFormat)}
-    </div>
-  )
+  handleInputChange = (event) => {
+    const { name, value } = event.target;
+
+    this.setState({ [name]: value });
+  }
+
+  renderCheck = type => (check, index) => {
+    const id = `${type}-${index}`;
+
+    return (
+      <input
+        key={id}
+        name={id}
+        id={id}
+        value={moment(check, timeDisplayFormat).format(timeDisplayFormat)}
+        onChange={this.handleInputChange}
+      />
+    );
+  }
 
   render() {
     const {
       id,
-      checks: { entrances, exits },
+      entrances,
+      exits,
+      durationHours,
+      durationMinutes,
+      delta,
       workDurationHour,
     } = this.props;
 
-    if (entrances && exits) {
-      const totalDifferance = calculateTimeDiff(
-        entrances,
-        exits,
-        this.getDate(),
-      );
-      const minutesWorked = moment.duration(totalDifferance, 'minutes');
-      const durationHours = minutesWorked.get('hours');
-      const durationMinutes = minutesWorked.get('minutes');
-
-      return (
-        <tr>
-          <td>{id}</td>
-          <td>{entrances.map(this.renderCheck)}</td>
-          <td>{exits.map(this.renderCheck)}</td>
-          <td>{`${durationHours}:${durationMinutes} / ${workDurationHour}:00 -> ${totalDifferance - (workDurationHour * 60)}`}</td>
-        </tr>
-      );
-    }
-
-    return null;
+    return (
+      <tr>
+        <td>{id}</td>
+        <td>{entrances.map(this.renderCheck('entrance'))}</td>
+        <td>{exits.map(this.renderCheck('exit'))}</td>
+        <td>{`${durationHours}:${durationMinutes} / ${workDurationHour}:00 -> ${delta}`}</td>
+      </tr>
+    );
   }
 }
 
 Day.propTypes = {
   id: PropTypes.number.isRequired,
-  indexMonth: PropTypes.number.isRequired,
-  year: PropTypes.number.isRequired,
-  checks: PropTypes.shape({
-    entrances: PropTypes.arrayOf(PropTypes.string),
-    exits: PropTypes.arrayOf(PropTypes.string),
-  }).isRequired,
+  entrances: PropTypes.arrayOf(PropTypes.string).isRequired,
+  exits: PropTypes.arrayOf(PropTypes.string).isRequired,
+  durationHours: PropTypes.number.isRequired,
+  durationMinutes: PropTypes.number.isRequired,
+  delta: PropTypes.number.isRequired,
   workDurationHour: PropTypes.number,
 };
 

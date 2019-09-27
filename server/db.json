@@ -490,14 +490,30 @@
         {
           "id": 1,
           "checks": {
-            "entrances": ["08.10", "14.00"],
-            "exits": ["13.00", "17.30"]
+            "entrances": [
+              "09.00",
+              "14.00"
+            ],
+            "exits": [
+              "13.00",
+              "17.30"
+            ]
           },
-          "workDurationH": 8
+          "workDurationHour": 8
         },
         {
           "id": 2,
-          "checks": []
+          "checks": {
+            "entrances": [
+              "08.20",
+              "14.00"
+            ],
+            "exits": [
+              "13.00",
+              "17.30"
+            ]
+          },
+          "workDurationHour": 8
         },
         {
           "id": 3,
